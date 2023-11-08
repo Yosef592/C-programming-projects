@@ -1,37 +1,35 @@
 #include <iostream>
-#include <cstdlib>
 
 using namespace std;
 
 int main()
 {
-    system("color 1");
-    cout << "                                                Learn programming!" << endl;
-    string j="java", p="python", c="C++", ph="php";
-    string in;
-
-    cout << "Enter your learn programming language: ";
-    cin >> in;
-    if (in == j)
+    // create 5 digit password list in 00000 into 55555
+    int p=0;
+    while (p<=5)
     {
-     cout << endl;
-     cout << "best java learn youtube chanal is DG Tube" << endl;
+        int a=0;
+        while (a<=5)
+        {
+            int s=0;
+            while (s<=5)
+            {
+                int S=0;
+                while (S<=5)
+                {
+                    int w=0;
+                    while (w<=5)
+                    {
+                        cout << p << a << s << S << w << endl;
+                        ++w;
+                    }
+                    ++S;
+                }
+                ++s;
+            }
+            ++a;
+        }
+        ++p;
     }
-    else if (in == p)
-    {
-     cout << endl;
-     cout << "best python learn youtube chanal is DG Tube" << endl;
-    }
-    else if (in == c)
-    {
-     cout << endl;
-     cout << "best c++ learn youtube chanal is DG Tube" << endl;
-    }
-    else if (in == ph)
-    {
-     cout << endl;
-     cout << "best php learn youtube chanal is DG Tube" << endl;
-    }
-
     return 0;
 }
